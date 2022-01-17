@@ -2,7 +2,7 @@
 This is the code for a wordle solver for the 538 Riddler puzzle [here](https://fivethirtyeight.com/features/when-the-riddler-met-wordle/)
 
 For the goal of maximizing the probability of winning within 3 turns, this code
-finds 2 equivalently good strategies, which result in 1387/2314 words winning within 3 turns (59.94%):
+finds 2 equivalently good starting words, which result in 1387/2314 words winning within 3 turns (59.94%):
 slate, and trace.
 
 ## Strategy explanation
