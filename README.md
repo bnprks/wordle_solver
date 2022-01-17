@@ -26,6 +26,8 @@ largest value of `C` will lead to the highest probability of winning.
 Which word is best for the second guess depends on the feedback from the first guess.
 The files [slate_second_guess.txt](https://github.com/bnprks/wordle_solver/blob/master/slate_second_guess.txt) and [trace_second_guess.txt](https://github.com/bnprks/wordle_solver/blob/master/trace_second_guess.txt) give the list of appropriate second guesses for each possible piece of feedback.
 
+The third guess is up to you!
+
 ## Running the code
 The code is written in the Zig programming language, which can be downloaded [here](https://ziglang.org/download/).
 
