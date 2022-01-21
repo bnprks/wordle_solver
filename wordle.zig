@@ -1,14 +1,12 @@
 const std = @import("std");
 
 
-
-
 // Load the word lists at compile time
 const guesses_raw = @embedFile("guesses.txt");
-pub const TOTAL_WORDS = guesses_raw.len / 6;
+pub const TOTAL_WORDS = (guesses_raw.len + 1) / 6;
 
 const answers_raw = @embedFile("answers.txt");
-pub const ANS_WORDS = answers_raw.len / 6;
+pub const ANS_WORDS = (answers_raw.len + 1) / 6;
 
 pub const POSSIBLE_SCORES = std.math.pow(u8, 3, 5);
 
@@ -33,6 +31,7 @@ fn printUsage() !void {
         \\wordle second [first-guess] -- 
         \\     print out a table of second guess words to use for each possible
         \\     response to the first guess
+        \\
     , .{});
 }
 
