@@ -2,8 +2,10 @@
 This is the code for a wordle solver for the 538 Riddler puzzle [here](https://fivethirtyeight.com/features/when-the-riddler-met-wordle/)
 
 For the goal of maximizing the probability of winning within 3 turns, this code
-finds 2 equivalently good starting words, which result in 1387/2314 words winning within 3 turns (59.94%):
-slate, and trace.
+finds the best starting word, which results in 1388/2314 words winning within 3 turns (59.98%):
+trace.
+
+[Update 1/21: An earlier bug had me ignoring the last word of each list, making trace now the unique best starting word]
 
 ## Strategy explanation
 The strategy is simplest to explain starting backwards:
@@ -24,7 +26,7 @@ largest value of `C` will lead to the highest probability of winning.
 
 ## Using the strategy
 Which word is best for the second guess depends on the feedback from the first guess.
-The files [slate_second_guess.txt](https://github.com/bnprks/wordle_solver/blob/master/slate_second_guess.txt) and [trace_second_guess.txt](https://github.com/bnprks/wordle_solver/blob/master/trace_second_guess.txt) give the list of appropriate second guesses for each possible piece of feedback.
+The file [trace_second_guess.txt](https://github.com/bnprks/wordle_solver/blob/master/trace_second_guess.txt) gives the list of appropriate second guesses for each possible piece of feedback.
 
 The third guess is up to you!
 

@@ -151,4 +151,4 @@ Second guess:
 🟩🟩🟩⬛🟩 trade
 🟩🟩🟩🟩⬛ track
 🟩🟩🟩🟩🟩 trace
-Worst case remaining words: 90
+Worst case remaining words: 141
