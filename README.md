@@ -2,7 +2,7 @@
 This is the code for a wordle solver for the 538 Riddler puzzle [here](https://fivethirtyeight.com/features/when-the-riddler-met-wordle/)
 
 For the goal of maximizing the probability of winning within 3 turns, this code
-finds 2 equivalently good strategies, which result in 1387/2314 words winning within 3 turns (59.94%):
+finds 2 equivalently good starting words, which result in 1387/2314 words winning within 3 turns (59.94%):
 slate, and trace.
 
 ## Strategy explanation
@@ -25,6 +25,8 @@ largest value of `C` will lead to the highest probability of winning.
 ## Using the strategy
 Which word is best for the second guess depends on the feedback from the first guess.
 The files [slate_second_guess.txt](https://github.com/bnprks/wordle_solver/blob/master/slate_second_guess.txt) and [trace_second_guess.txt](https://github.com/bnprks/wordle_solver/blob/master/trace_second_guess.txt) give the list of appropriate second guesses for each possible piece of feedback.
+
+The third guess is up to you!
 
 ## Running the code
 The code is written in the Zig programming language, which can be downloaded [here](https://ziglang.org/download/).
